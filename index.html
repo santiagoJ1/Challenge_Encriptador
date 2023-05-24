@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+            <img class="header__img1" src="imagenes/Oracle_logo.png" alt="Logo Oracle + Alura">
+
+            <h1>Challenge ONE Sprint 01 Encriptador</h1>
+
+            <img class="header__img2" src="imagenes/logo_alura.png" alt="Logo Alura Latam">
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="main-textarea">
+                <textarea class="textarea" cols="30" rows="8" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+
+                <div class="main-textarea__botones">
+                    <p>   Mayúsculas se vuelven minúsculas y se eliminan los acentos.</p>
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesEncriptar()">Desencriptar</button>
+                </div>
+        </section>
+
+        <section>
+            <div class="main__mensaje">
+                <textarea class="mensaje" cols="30" rows="8"></textarea>
+            </div>
+            <div class="main-mensaje__botones">
+                <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+                <button class="btn-limpiar" onclick="btnLimpiar()">Limpiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="copyrigth">
+            <a href="https://www.linkedin.com/in/santiago-jamachi-matias-estudiante-/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/santycrazzy" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <p>&copy Copyrigt Santiago Jamachi Matias</p>    
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/5f263dcc2e.js" crossorigin="anonymous"></script>
+</body>
+</html>

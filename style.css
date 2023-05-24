@@ -1,0 +1,270 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    background: #a1c5e7;
+}
+
+/* Aquí comiensa el CSS del header */
+
+header{
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: 40px;
+    background: none;
+}
+
+.header__img1{
+    box-sizing: border-box;
+    position: relative;
+    top: 20px;
+    left: 30px;
+
+    padding: 0 0 10px 10px;
+    background: linear-gradient(to top, rgb(106, 131, 131), #000 30%);
+    box-shadow: 2px 2px 100px 50px rgb(67, 68, 68);
+}
+
+h1{
+    box-sizing: border-box;
+    background: none;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 399px;
+
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(1, 0, 8);
+    text-shadow: -1px -1px 1px #FFF, -1px -1px 1px #003af7;
+}
+
+.header__img2{
+    box-sizing: border-box;
+    position: absolute;
+    right:40px;
+    top: 10px;
+    width: 7vw;
+
+    padding: 0 5px 5px 0;
+    background: linear-gradient(to top, #666666, #000 40%);
+    box-shadow: 2px 2px 300px 150px rgb(67, 68, 68);
+}
+
+/* Aquí comienza el CSS de la primera caja textarea */
+
+main{
+    display: flex;
+    margin-top: 50px;
+    background: none;
+}
+
+section{
+    background: none;
+}
+
+.main-textarea{
+    margin-left: 70px;
+    background: #FFF;
+    width: 575px;
+    height: 350px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    
+    box-shadow: 2px 2px 300px 150px rgb(67, 68, 68);
+}
+
+.main-textarea textarea{
+    box-sizing: border-box;
+    width: 575px;
+    height: 350px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(1, 0, 8);
+    border-radius: 20px;
+    
+    resize: none;
+    outline: 2px solid rgb(1, 142, 142);
+    background-image: url(imagenes/Humanos.png);
+    opacity: .9;
+}
+
+.main-textarea textarea::selection{
+    background: #000000;
+    color: #003af7;
+}
+
+::placeholder{
+    color: rgb(1, 0, 8);
+    font-weight: bold;
+}
+
+.main-textarea__botones{
+    margin-left: 80px;
+    background: none;
+}
+
+.main-textarea__botones > p{
+    background: none;
+    color: #FFF;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main-textarea__botones > p::before{
+    content: "!";
+    margin-right: 10px;
+    color: #F00;
+    font-size: 20px;
+}
+
+.btn-encriptar{
+    width: 270px;
+    height: 67px;
+    border-radius: 20px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(to top, #000, #86b5e0);
+    border: none;
+}
+
+.btn-encriptar:active{
+    font-size: 19px;
+    background: linear-gradient(to top, rgb(112, 133, 179), #000);
+}
+
+.btn-desencriptar{
+    width: 270px;
+    height: 67px;
+    margin-left: 15px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #FFF;
+    font-weight: bold;
+    background: linear-gradient(to top, #000, #86b5e0);
+    border: none;
+}
+
+.btn-desencriptar:active{
+    font-size: 19px;
+    background: linear-gradient(to top, rgb(112, 133, 179), #000);
+}
+
+/* Aquí comienza el CSS de la caja del textarea Mensaje */
+
+.main__mensaje{
+    margin-left: 70px;
+    background: #FFF;
+    width: 575px;
+    height: 350px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+
+    box-shadow: 2px 2px 300px 150px rgb(67, 68, 68);
+}
+
+.main__mensaje textarea{
+    box-sizing: border-box;
+    width: 575px;
+    height: 350px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    outline: 2px solid rgb(1, 142, 142);
+    
+    resize: none;
+    border-radius: 20px;
+    background-image: url(imagenes/Platillo_Real_.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__mensaje textarea.active {
+    background-image: url(imagenes/Platillo_Real_Gente.PNG);
+    opacity: 0.9;
+}
+
+.main__mensaje textarea::selection{
+    background: #000000;
+    color: #003af7;
+}
+
+.main-mensaje__botones{
+    margin-left: 80px;
+    position: relative;
+    top: 40px;
+    background: none;
+}
+
+.btn-copiar{
+    width: 270px;
+    height: 67px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #FFF;
+    font-weight: bold;
+    background: linear-gradient(to top, #000, #86b5e0);
+    border: none;
+}
+
+.btn-copiar:active{
+    font-size: 19px;
+    background: linear-gradient(to top, rgb(112, 133, 179), #000);
+}
+
+.btn-limpiar{
+    width: 270px;
+    height: 67px;
+    margin-left: 15px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #FFF;
+    font-weight: bold;
+    background: linear-gradient(to top, #000, #86b5e0);
+    border: none;
+}
+
+.btn-limpiar:active{
+    font-size: 19px;
+    background: linear-gradient(to top, rgb(112, 133, 179), #000);
+}
+
+footer {
+    background: none;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.copyrigth {
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+footer .copyrigth a {
+    background: none;
+    margin: 0 10px;
+    font-size: 2.5em;
+}
+
+footer .copyrigth a:first-child i.fa-brands {
+    color: #003af7;
+}
+
+.copyrigth i{
+    background: none;
+}
+
+footer p {
+    display: inline;
+    background: none;
+    margin-top: 12px;
+    font-size: 1em;
+    font-weight: 550;
+}
