@@ -232,6 +232,7 @@ section{
     background: linear-gradient(to top, rgb(112, 133, 179), #000);
 }
 
+/* CSS del footer */
 footer {
     background: none;
     text-align: center;
@@ -267,4 +268,30 @@ footer p {
     margin-top: 12px;
     font-size: 1em;
     font-weight: 550;
+}
+
+/* Media query para pantallas moviles de 786px */
+@media screen and (max-width: 786px){
+    header{
+        display: inline-block;
+    }
+    h1{
+        position: absolute;
+        left: 21em;
+    }
+    .header__img2{
+        position: absolute;
+        left: 70em;
+        top: 1em;
+        width: 10vw;
+    }
+    .main-textarea{
+        margin-left: 10px;
+    }
+    .main-textarea__botones{
+        margin-left: 10px;
+    }
+    footer{
+        margin-left: 28em;
+    }
 }
